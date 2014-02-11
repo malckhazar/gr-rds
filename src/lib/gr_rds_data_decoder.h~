@@ -88,8 +88,8 @@ private:
 	gr::msg_queue::sptr d_msgq;
 
 // Functions
-	friend gr_rds_data_decoder_sptr gr_rds_make_data_decoder (gr::msg_queue::sptr);
-	gr_rds_data_decoder (gr::msg_queue::sptr);		// private constructor
+	friend gr_rds_data_decoder_sptr gr_rds_make_data_decoder (gr_msg_queue_sptr);
+	gr_rds_data_decoder (gr_msg_queue_sptr);		// private constructor
 	void enter_no_sync();
 	void enter_sync(unsigned int);
 	void reset_rds_data();

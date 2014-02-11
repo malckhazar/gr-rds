@@ -54,8 +54,8 @@ gr_rds_bpsk_demod_sptr gr_rds_make_bpsk_demod (double sampling_rate)
  */
 gr_rds_bpsk_demod::gr_rds_bpsk_demod (double input_sampling_rate)
 	: gr::block("gr_rds_bpsk_demod",
-			gr::io_signature::make (2, 2, sizeof(float)),
-			gr::io_signature::make (1, 8, sizeof(bool)))
+			gr::make_io_signature (2, 2, sizeof(float)),
+			gr::make_io_signature (1, 8, sizeof(bool)))
 {
 	SYMBOL_LENGTH = (int)(input_sampling_rate/1187.5);
 

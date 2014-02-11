@@ -30,7 +30,7 @@
 #include "config.h"
 #endif
 
-#include <gr_rds_freq_divider.h>
+#include <rds_freq_divider.h>
 #include <gnuradio/io_signature.h>
 
 /*

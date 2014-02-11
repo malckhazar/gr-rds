@@ -7,8 +7,7 @@
 %}
 
 %include "exception.i"
-//%import "gnuradio.i"			// the common stuff
-%include "gnuradio.i"			// the common stuff
+%import "gnuradio.i"			// the common stuff
 
 %{
 #include "gnuradio/swig/gnuradio_swig_bug_workaround.h"	// mandatory bug fix

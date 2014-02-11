@@ -47,7 +47,7 @@
 #endif
 
 #include <gr_rds_rate_enforcer.h>
-#include <gnuradio/io_signature.h>
+#include <io_signature.h>
 #include <math.h>
 
 gr_rds_rate_enforcer_sptr gr_rds_make_rate_enforcer (double samp_rate) {
